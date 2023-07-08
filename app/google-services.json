@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "692454385594",
+    "project_id": "multiuserprotecteverything",
+    "storage_bucket": "multiuserprotecteverything.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692454385594:android:cb4a0ffafa105aea959f83",
+        "android_client_info": {
+          "package_name": "com.example.protecteverything"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "692454385594-3ucigden3224glcorr7k2t3haps1bjj8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASLO897Nh4DAvvW5xgl1098HfA9ORKfHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "692454385594-3ucigden3224glcorr7k2t3haps1bjj8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

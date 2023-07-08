@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SiteCodesFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/searchCardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="5dp"
+        style="@style/myCardView"
+        >
+        <EditText
+            android:id="@+id/siteName"
+            style="@style/editText"
+            android:hint="Enter Site Name"
+            android:inputType="text"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/siteCodeRecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchCardview"
+        tools:listitem="@layout/secretcode" />
+</RelativeLayout>
