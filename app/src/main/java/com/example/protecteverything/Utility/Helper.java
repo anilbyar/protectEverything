@@ -145,12 +145,18 @@ public class Helper {
     }
     private static String shuffleString(String string)
     {
-        List<String> letters = Arrays.asList(string.split(""));
-        Collections.shuffle(letters);
         StringBuilder shuffled = new StringBuilder();
-        for (String letter : letters) {
-            shuffled.append(letter);
+        for (int i = 0;i<string.length();i++){
+            shuffled.append(string.charAt(i));
         }
+        Random rand = new Random();
+        for (int i = 0;i<string.length();i++){
+            int ind = rand.nextInt(string.length());
+            char temp = shuffled.charAt(ind);
+            shuffled.setCharAt(ind, shuffled.charAt(i));
+            shuffled.setCharAt(i, temp);
+        }
+
         return shuffled.toString();
     }
 }
